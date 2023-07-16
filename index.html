@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ImmenseTec</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <script type="text/javascript">
+        function emailFun() {
+  emailBodyStart="Hi Immensetec, I am interested in knowing more about  ";
+  emailBodyEnd=" Please reach out to me at ==your phone number please==";
+  //put the type of hiring here. " hiring with immensetec " if no hiring type is selected
+  hiring=" hiring ";
+  //keep blank if no vertical is provided
+  verticals="";
+  hire_element = document.getElementById("hire");
+  hire_val=hire_element.value;
+  switch(hire_val){
+  case "general":
+    hiring = " hring ";
+    break;
+  case "direct":
+    hiring = " direct hiring ";
+    break;
+  case "contract":
+    hiring = " contract hiring ";
+    break;
+  default :
+    hiring = " hiring ";
+  }
+  vertical_element = document.getElementById("bus_vertical");
+  vertical_val=vertical_element.value;
+  switch(vertical_val){
+  case "any":
+    verticals = "";
+        break;
+  case "energy":
+    verticals = " for Energy and Utilities ";
+        break;
+  case "consult":
+    verticals =" for Consulting and Professional Services ";
+        break;
+  case "edu":
+    verticals = " for Education ";
+      break;
+  case "ngo":
+    verticals = " for Non-profit and NGOs ";
+      break;
+  case "auto":
+    verticals = " for Automtive ";
+        break;
+  case "eng":
+    verticals = " for Engineering ";
+        break;
+  case "retail":
+    verticals = " for Retail and E-commerce ";
+        break;
+  case "logi":
+    verticals = " for Manufacturing and Logistics ";
+        break;
+  case "tour":
+    verticals = " for Hospitality and tourism ";
+        break;
+  case "media":
+    verticals = " for Media and Entertainment ";
+        break;
+  case "tech":
+    verticals = " for Technology ";
+        break;
+  case "health":
+    verticals = " for Healthcare ";
+        break;
+  case "fin":
+    verticals = " for Finance and Accounting ";
+        break;
+  case "ads":
+    verticals = " for Marketing and advertising ";
+        break;
+  case "prop":
+    verticals = " for Real Estate and Property Management ";
+        break;
+  default:
+    verticals = " ";
+        break;
+  }
+emailBodyStart=emailBodyStart+hiring+verticals+"."+emailBodyEnd;
+subject="Hiring with Immensetec";
+encoded_body=encodeURIComponent(emailBodyStart);
+encoded_subject=encodeURIComponent(subject);
+window.location.href = "mailto:hrimmensetec@outlook.com?subject="+encoded_subject+"&body="+encoded_body;
+}
+    </script>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bk.jpg);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <img src="img/logo.png" alt="logo">
+                    </div>  
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
+            	Curating Unparalleled Talent<br>
+            	to Drive the Growth of Your Business
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                Immensetec thrives on a foundation of excellence and empowerment. These values permeate everything we undertake and every client we support.
+                <br> Our commitment is to consistently surpass your expectations, going above and beyond in every interaction. By continually pushing ourselves to reach greater heights, we ensure that we deliver exceptional results that truly make a difference.
+            </p>
+            <!-- <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a> -->
+        </div>
+    </div>
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5">What We Have To Offer</h2>
+        <div class="row">
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-6 text-center">
+                <img src="img/smart-protect-1.jpg" alt="Anti-spam" class="mx-auto">
+                <h4>Direct Hire</h4>
+                <p>Recruit and hire candidates for permanent employment positions.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-6 text-center">
+                <img src="img/smart-protect-2.jpg" alt="Phishing Detect" class="mx-auto">
+                <h4>Contract hire</h4>
+                <p>Quickly augment workforce as needed and adapt to fluctuating business demands</p>
+            </div>
+           <!--  <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img src="img/smart-protect-3.jpg" alt="Smart Scan" class="mx-auto">
+                <h4>Extensive Business Verticals Reach</h4>
+                <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
+            </div> -->
+        </div>
+    </div>
+    <!-- feature (skew background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+        <div class="container my-5">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                    <h2 class="font-weight-bold">Direct Hire</h2>
+                    <p class="my-4">Immensetec understands the expensive cost of acquiring and training permanent personnel. For long-term success, we prioritise discovering people that not only possess the essential abilities but also fit effortlessly into the organization's culture. We rapidly source the ideal people using our streamlined direct hire recruiting approach. We deliver optimal matching by utilising specialised industry teams, various payment choices, and comprehensive verification. We provide thorough help during the interview process to ensure a smooth encounter.</p>
+                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Contact Us</a>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
+                    <img src="img/feature-1.png" alt="Take a look inside" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feature (green background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-last">
+        <div class="container">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
+                    <h2 class="font-weight-bold">Contract Hire</h2>
+                    <p class="my-4">
+                        Businesses nowadays must be flexible and agile to survive in the competitive environment. Our contract hire staffing solution gives you the freedom to easily find qualified employees for particular tasks. We offer immediate resources without the burden of employment-related fees thanks to our extensive database of great applicants, affordable rates, and quick response times. Maintain your competitive edge with our accommodating hiring process.
+                    </p>
+                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
+                    <img src="img/feature-2.png" alt="Safe and reliable" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- price table -->
+    <div class="container my-5 py-2" id="price-table">
+        <h2 class="text-center font-weight-bold d-block mb-3">Extensive Business Verticals Reach</h2>
+        <p class="my-4">Immensetec offers its comprehensive staffing solutions across a wide range of business verticals, ensuring that we can cater to the specific talent requirements of various industries. Some of the key business verticals we serve include: </p>
+        <div class="row">
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
+                <!-- <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">0</span> / MO.</p> -->
+                <ul class="list-unstyled">
+                    <li>Technology</li>
+                    <li>Healthcare</li>
+                    <li>Finance and Accounting</li>
+                    <li>Marketing and Advertising</li>
+                    <li>Real Estate and Property Management</li>
+                </ul>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
+                <!-- <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">10</span> / MO.</p> -->
+                <ul class="list-unstyled">
+                    <li>Engineering</li>
+                    <li>Retail and E-commerce</li>
+                    <li>Manufacturing and Logistics</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Media and Entertainment</li>
+                </ul>
+                <!-- <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Free</a> -->
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
+                <!--<h4 class="my-4">PROFESSIONAL</h4>
+                 <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">30</span> / MO.</p> -->
+                <ul class="list-unstyled">
+                    <li>Energy and Utilities</li>
+                    <li>Consulting and Professional Services</li>
+                    <li>Education</li>
+                    <li>Non-profit and NGOs</li>
+                    <li>Automotive</li>
+                </ul>
+            </div>
+        </div>
+        <p class="my-4">These are just a few examples of the business verticals we serve. Our capabilities extend to many other industries, and we have the flexibility and expertise to adapt to the unique needs of each vertical.</p>
+    </div>
+    <!-- contact -->
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/contact-bk.jpg);">
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Contact Us</h2>
+                    <p class="my-4">
+                        Te iisque labitur eos, nec sale argumentum scribentur,
+                        <br> augue disputando in vim. Erat fugit sit at, ius lorem.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Email : hrimmensetec@outlook.com</li>
+                        <li>Phone : 361-688-5824</li>
+                        <li>Address : 4826 White Avenue, Corpus Christi, Texas</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                    	<div class="row">
+	                        <div class="form-group col-md-6">
+	                            <label for="name">Hire Type</label>
+	                            <select name="hire_type" id="hire">
+                                    <option value="general" selected>General</option>
+                                    <option value="direct">Direct Hire</option>
+                                    <option value="contract">Contract Hire</option>
+                                </select>
+	                        </div>
+	                        <div class="form-group col-md-6">
+	                            <label for="Email">Business Vertical</label>
+	                            <select name="business_vertical" id="bus_vertical">
+                                    <option value="any" selected>Any</option>
+                                    <option value="energy">Energy and Utilities</option>
+                                    <option value="consult">Consulting and Professional Services</option>
+                                    <option value="edu">Education</option>
+                                    <option value="ngo">Non-profit and NGOs</option>
+                                    <option value="auto">Automotive</option>
+                                    <option value="eng">Engineering</option>
+                                    <option value="retail">Retail and E-commerce</option>
+                                    <option value="logi">Manufacturing and Logistics</option>
+                                    <option value="tour">Hospitality and Tourism</option>
+                                    <option value="media">Media and Entertainment</option>
+                                    <option value="tech">Technology</option>
+                                    <option value="health">Healthcare</option>
+                                    <option value="fin">Finance and Accounting</option>
+                                    <option value="ads">Marketing and Advertising</option>
+                                    <option value="prop">Real Estate and Property Management</option>
+                                </select>
+	                        </div>
+	                    </div>
+                        <button type="button" id="email_btn" onclick="emailFun()" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Send Email</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- copyright -->
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2018 Chen, Yi-Ya.
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <!-- <script src="js/email_js.js"></script> -->
+    
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+
+</html>
