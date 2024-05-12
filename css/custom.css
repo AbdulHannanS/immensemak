@@ -85,6 +85,7 @@ button {
 
 #feature-first {
     background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+    padding-top: 1px;
 }
 
 #feature-last {
