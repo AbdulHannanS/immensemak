@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+    o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+    o.onload=function(){window.trackingFunctions.onLoad({appId:"664098a6d9b8ce043ae862e7"})},
+    document.head.appendChild(o)}initApollo();
+    
+    fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                if (data.country !== 'US') {
+                    // Redirect users not from US to another page or display a message
+                    window.location.href = 'https://www.linkedin.com/company/immensetec-llc/';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching IP data:', error);
+            });
+    </script>
+        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ImmenseTec</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <script type="text/javascript">
+        function emailFun() {
+  emailBodyStart="Hi Immensetec, I am interested in knowing more about  ";
+  emailBodyEnd=" Please reach out to me at ==your phone number please==";
+  //put the type of hiring here. " hiring with immensetec " if no hiring type is selected
+  hiring=" hiring ";
+  //keep blank if no vertical is provided
+  verticals="";
+  hire_element = document.getElementById("hire");
+  hire_val=hire_element.value;
+  switch(hire_val){
+  case "general":
+    hiring = " hring ";
+    break;
+  case "direct":
+    hiring = " direct hiring ";
+    break;
+  case "contract":
+    hiring = " contract hiring ";
+    break;
+  default :
+    hiring = " hiring ";
+  }
+  vertical_element = document.getElementById("bus_vertical");
+  vertical_val=vertical_element.value;
+  switch(vertical_val){
+  case "any":
+    verticals = "";
+        break;
+  case "energy":
+    verticals = " for Energy and Utilities ";
+        break;
+  case "consult":
+    verticals =" for Consulting and Professional Services ";
+        break;
+  case "edu":
+    verticals = " for Education ";
+      break;
+  case "ngo":
+    verticals = " for Non-profit and NGOs ";
+      break;
+  case "auto":
+    verticals = " for Automtive ";
+        break;
+  case "eng":
+    verticals = " for Engineering ";
+        break;
+  case "retail":
+    verticals = " for Retail and E-commerce ";
+        break;
+  case "logi":
+    verticals = " for Manufacturing and Logistics ";
+        break;
+  case "tour":
+    verticals = " for Hospitality and tourism ";
+        break;
+  case "media":
+    verticals = " for Media and Entertainment ";
+        break;
+  case "tech":
+    verticals = " for Technology ";
+        break;
+  case "health":
+    verticals = " for Healthcare ";
+        break;
+  case "fin":
+    verticals = " for Finance and Accounting ";
+        break;
+  case "ads":
+    verticals = " for Marketing and advertising ";
+        break;
+  case "prop":
+    verticals = " for Real Estate and Property Management ";
+        break;
+  default:
+    verticals = " ";
+        break;
+  }
+emailBodyStart=emailBodyStart+hiring+verticals+"."+emailBodyEnd;
+subject="Hiring with Immensetec";
+encoded_body=encodeURIComponent(emailBodyStart);
+encoded_subject=encodeURIComponent(subject);
+window.location.href = "mailto:awhite@immensetec.com?subject="+encoded_subject+"&body="+encoded_body;
+}
+    </script>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bk.jpg);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-4">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-2">
+                        <a href="index.html" class="btn my-4 font-weight-bold atlas-cta" style="background-color: #bf1d94; color: white;">About Us</a></div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
+            	Curating Unparalleled Talent<br>
+            	to Drive the Growth of Your Business
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                Immensetec thrives on a foundation of excellence and empowerment. These values permeate everything we undertake and every client we support.
+                <br> Our commitment is to consistently surpass your expectations, going above and beyond in every interaction. By continually pushing ourselves to reach greater heights, we ensure that we deliver exceptional results that truly make a difference.
+            </p>
+            <!-- <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a> -->
+        </div>
+    </div>
+    <!-- three-block -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5">Terms and conditions, Privacy Policy</h2>
+        <div class="row">
+            <h1>Terms and Conditions of Use for Immensetec LLC</h1>
+            <p>Welcome to Immensetec.com (the “Website”). By accessing or using this Website, you agree to be bound by these Terms and Conditions of Use (“Terms”). If you do not agree to these Terms, please do not use this Website. Immensetec LLC reserves the right to modify these Terms at any time without prior notice. You should review these Terms periodically to stay informed of any changes.</p>
+        
+            <h2>1. Acceptance of Terms</h2>
+            <p>These Terms apply to all users of the Website, including visitors, clients, and candidates. By accessing or using the Website, you agree to be bound by these Terms and any additional guidelines or rules posted on the Website.</p>
+        
+            <h2>2. Description of Services</h2>
+            <p>Immensetec LLC provides business development, staffing, and talent solutions to clients and candidates. Through our Website, users can access information about our services, submit inquiries, and apply for positions. All content on this Website is intended for informational purposes only.</p>
+        
+            <h2>3. User Responsibilities</h2>
+            <p>By using this Website, you agree:</p>
+            <ul>
+                <li>Not to use the Website for any illegal or unauthorized purposes.</li>
+                <li>Not to engage in any conduct that could damage, disable, or impair the Website or interfere with any other user’s enjoyment of the Website.</li>
+                <li>Not to attempt to gain unauthorized access to any portion or feature of the Website or any other systems connected to the Website.</li>
+                <li>Not to use any automated systems, such as “robots” or “spiders,” to access the Website.</li>
+            </ul>
+        
+            <h2>4. Intellectual Property</h2>
+            <p>All content on the Website, including text, graphics, logos, images, and software, is the property of Immensetec LLC or its content suppliers and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works from the Website content without prior written permission from Immensetec LLC.</p>
+        
+            <h2>5. Links to Third-Party Sites</h2>
+            <p>The Website may contain links to third-party websites or resources. These links are provided for your convenience only. Immensetec LLC is not responsible for the content or practices of any third-party websites. Accessing any linked third-party sites is done at your own risk.</p>
+        
+            <h2>6. Privacy</h2>
+            <p>Your use of the Website is also governed by our <a href="privacy-policy.html">Privacy Policy</a>, which outlines how we collect, use, and safeguard your information. By using the Website, you consent to our data practices as described in the Privacy Policy.</p>
+        
+            <h2>7. Disclaimer of Warranties</h2>
+            <p>Immensetec LLC provides the Website and its services “as is” and without any warranties of any kind, whether express or implied. We do not guarantee that the Website will be error-free, uninterrupted, or free from viruses or other harmful components. To the fullest extent permitted by law, Immensetec LLC disclaims all warranties, express or implied, regarding the Website and any services provided through it.</p>
+        
+            <h2>8. Limitation of Liability</h2>
+            <p>In no event shall Immensetec LLC, its affiliates, employees, or agents be liable for any damages arising from or related to your use of or inability to use the Website, even if Immensetec LLC has been advised of the possibility of such damages. This limitation of liability applies to all types of claims, whether arising in contract, tort, or otherwise.</p>
+        
+            <h2>9. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless Immensetec LLC, its affiliates, employees, and agents from any claims, damages, liabilities, and expenses (including legal fees) arising from your use of the Website or any violation of these Terms.</p>
+        
+            <h2>10. Governing Law</h2>
+            <p>These Terms are governed by and construed in accordance with the laws of the State of Illinois, without regard to its conflict of laws principles. Any disputes arising out of or relating to these Terms or your use of the Website shall be resolved in the state or federal courts located in Illinois.</p>
+        
+            <h2>11. Termination</h2>
+            <p>Immensetec LLC reserves the right to terminate or suspend your access to the Website, without notice, for any conduct that violates these Terms or is otherwise deemed harmful to the interests of Immensetec LLC.</p>
+        
+            <h2>12. Changes to Terms</h2>
+            <p>Immensetec LLC may update these Terms from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to periodically review these Terms for any updates.</p>
+        
+            <h2>13. Contact Information</h2>
+            <p>For questions or concerns regarding these Terms, please contact us at:</p>
+            <p>Immensetec LLC<br>
+            <strong>Email:</strong> <a href="mailto:contact@immensetec.com">contact@immensetec.com</a><br>
+            Springfield, Illinois</p>
+        </div>
+    </div>
+
+	<!-- copyright -->
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2024 IMMENSETEC LLC. All Rights Reserved.
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="https://www.instagram.com/immensetec?igsh=MXdhYmtucjljbDBicA%3D%3D&utm_source=qr" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://x.com/immensetec" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/immensetec-llc/" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <!-- <script src="js/email_js.js"></script> -->
+    
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+
+</html>
