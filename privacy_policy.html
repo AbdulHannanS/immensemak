@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+    o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+    o.onload=function(){window.trackingFunctions.onLoad({appId:"664098a6d9b8ce043ae862e7"})},
+    document.head.appendChild(o)}initApollo();
+    
+    fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                if (data.country !== 'US') {
+                    // Redirect users not from US to another page or display a message
+                    window.location.href = 'https://www.linkedin.com/company/immensetec-llc/';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching IP data:', error);
+            });
+    </script>
+        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ImmenseTec</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <script type="text/javascript">
+        function emailFun() {
+  emailBodyStart="Hi Immensetec, I am interested in knowing more about  ";
+  emailBodyEnd=" Please reach out to me at ==your phone number please==";
+  //put the type of hiring here. " hiring with immensetec " if no hiring type is selected
+  hiring=" hiring ";
+  //keep blank if no vertical is provided
+  verticals="";
+  hire_element = document.getElementById("hire");
+  hire_val=hire_element.value;
+  switch(hire_val){
+  case "general":
+    hiring = " hring ";
+    break;
+  case "direct":
+    hiring = " direct hiring ";
+    break;
+  case "contract":
+    hiring = " contract hiring ";
+    break;
+  default :
+    hiring = " hiring ";
+  }
+  vertical_element = document.getElementById("bus_vertical");
+  vertical_val=vertical_element.value;
+  switch(vertical_val){
+  case "any":
+    verticals = "";
+        break;
+  case "energy":
+    verticals = " for Energy and Utilities ";
+        break;
+  case "consult":
+    verticals =" for Consulting and Professional Services ";
+        break;
+  case "edu":
+    verticals = " for Education ";
+      break;
+  case "ngo":
+    verticals = " for Non-profit and NGOs ";
+      break;
+  case "auto":
+    verticals = " for Automtive ";
+        break;
+  case "eng":
+    verticals = " for Engineering ";
+        break;
+  case "retail":
+    verticals = " for Retail and E-commerce ";
+        break;
+  case "logi":
+    verticals = " for Manufacturing and Logistics ";
+        break;
+  case "tour":
+    verticals = " for Hospitality and tourism ";
+        break;
+  case "media":
+    verticals = " for Media and Entertainment ";
+        break;
+  case "tech":
+    verticals = " for Technology ";
+        break;
+  case "health":
+    verticals = " for Healthcare ";
+        break;
+  case "fin":
+    verticals = " for Finance and Accounting ";
+        break;
+  case "ads":
+    verticals = " for Marketing and advertising ";
+        break;
+  case "prop":
+    verticals = " for Real Estate and Property Management ";
+        break;
+  default:
+    verticals = " ";
+        break;
+  }
+emailBodyStart=emailBodyStart+hiring+verticals+"."+emailBodyEnd;
+subject="Hiring with Immensetec";
+encoded_body=encodeURIComponent(emailBodyStart);
+encoded_subject=encodeURIComponent(subject);
+window.location.href = "mailto:awhite@immensetec.com?subject="+encoded_subject+"&body="+encoded_body;
+}
+    </script>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bk.jpg);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-4">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-2">
+                        <a href="index.html" class="btn my-4 font-weight-bold atlas-cta" style="background-color: #bf1d94; color: white;">About Us</a></div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
+            	Curating Unparalleled Talent<br>
+            	to Drive the Growth of Your Business
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                Immensetec thrives on a foundation of excellence and empowerment. These values permeate everything we undertake and every client we support.
+                <br> Our commitment is to consistently surpass your expectations, going above and beyond in every interaction. By continually pushing ourselves to reach greater heights, we ensure that we deliver exceptional results that truly make a difference.
+            </p>
+            <!-- <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a> -->
+        </div>
+    </div>
+    <!-- three-block -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5">Terms and conditions, Privacy Policy</h2>
+        <div class="row">
+            <h1>Privacy Policy for Immensetec LLC</h1>
+    <p>Immensetec LLC is committed to protecting the privacy of all users who visit <a href="http://www.immensetec.com">Immensetec.com</a> (the “Website”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information. By using this Website, you agree to the terms of this Privacy Policy.</p>
+
+    <p>The terms “you” and “your” refer to all clients, visitors, candidates, and other users of our website, services, and products. The terms “we,” “our,” and “us” refer to Immensetec LLC, including our affiliates, subsidiaries, and employees.</p>
+
+    <h2>Information We Collect</h2>
+    <p>Immensetec LLC may collect personal information when you visit our Website, request services, or submit inquiries. The types of information we may collect include:</p>
+    <ul>
+        <li><strong>Personal Information:</strong> Details that identify you, such as your name, contact number, email address, or mailing address, which we collect when you interact with us.</li>
+        <li><strong>Demographic Information:</strong> Data that reflects socioeconomic characteristics, such as age, zip code, and job history, helping us tailor services to your needs.</li>
+        <li><strong>Behavioral Information:</strong> Data related to browsing habits, like pages visited or services accessed, which help us better understand and meet your interests.</li>
+        <li><strong>Information from Third-Party Sources:</strong> We may gather data from job boards, social media, and public sites to enhance candidate profiles. By using our services, you consent to the collection, use, and disclosure of such information for potential job opportunities.</li>
+    </ul>
+
+    <h2>Methods of Collection</h2>
+    <p>We use various methods to collect information on the Website:</p>
+    <ul>
+        <li><strong>Direct Collection:</strong> Information you voluntarily provide through sign-ups, queries, or participation in interactive Website features.</li>
+        <li><strong>Cookies:</strong> Small files used to collect data such as IP address, browser type, and geographic location, allowing us to analyze preferences and improve user experience.</li>
+        <li><strong>Web Beacons:</strong> Small images used to track activities on our Website, helping us understand and meet user needs.</li>
+        <li><strong>Log Files:</strong> Records storing data like IP addresses and timestamps, which assist in analyzing preferences and enhancing our services.</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <p>Your personal information is used only for the purposes stated in this Policy, including:</p>
+    <ul>
+        <li>To evaluate user needs and improve services.</li>
+        <li>To inform you of relevant job openings, after receiving your approval to share your profile with potential employers.</li>
+        <li>To update you on services, events, or promotions related to Immensetec.</li>
+        <li>To respond to queries, gather feedback, and enhance user experience.</li>
+        <li>To meet legal obligations and assist law enforcement when required.</li>
+    </ul>
+    <p>By providing your contact information, you agree to receive updates on open positions and events at Immensetec LLC.</p>
+
+    <h2>Disclosure of Personal Data</h2>
+    <p>Except as required by law, we will not sell or share your information outside our organization. Information may be shared with our employees, affiliates, and partners when appropriate to meet your professional needs.</p>
+    <p>No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+
+    <h2>Data Security</h2>
+    <p>Immensetec LLC takes steps to secure your personal data from unauthorized access, using measures such as Secure Socket Layer (SSL) technology. While we strive to protect your data, no security system is foolproof. You are encouraged to protect your password and other login credentials.</p>
+
+    <h2>Your Consent</h2>
+    <p>By using our Website, you consent to the terms of this Privacy Policy, including our collection, use, and disclosure of information as outlined.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>Immensetec LLC may modify this Policy as needed. We encourage users to review it periodically for updates to ensure awareness of our data handling practices.</p>
+
+    <h2>Contact Us</h2>
+    <p>For questions or concerns about this Privacy Policy, please contact us at <a href="mailto:Info@immensetec.com">Info@immensetec.com</a>.</p>
+        </div>
+    </div>
+
+	<!-- copyright -->
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2024 IMMENSETEC LLC. All Rights Reserved.
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="https://www.instagram.com/immensetec?igsh=MXdhYmtucjljbDBicA%3D%3D&utm_source=qr" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://x.com/immensetec" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/immensetec-llc/" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <!-- <script src="js/email_js.js"></script> -->
+    
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+
+</html>
