@@ -4,18 +4,6 @@
     o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
     o.onload=function(){window.trackingFunctions.onLoad({appId:"664098a6d9b8ce043ae862e7"})},
     document.head.appendChild(o)}initApollo();
-    
-    fetch('https://ipapi.co/json/')
-            .then(response => response.json())
-            .then(data => {
-                if (data.country !== 'US') {
-                    // Redirect users not from US to another page or display a message
-                    window.location.href = 'https://www.linkedin.com/company/immensetec-llc/';
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching IP data:', error);
-            });
     </script>
         
 <head>
