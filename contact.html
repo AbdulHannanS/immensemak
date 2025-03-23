@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+        o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+        o.onload=function(){window.trackingFunctions.onLoad({appId:"664098a6d9b8ce043ae862e7"})},
+        document.head.appendChild(o)}initApollo();
+        </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +39,92 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
     </style>
+     <script type="text/javascript">
+        function emailFun() {
+        emailBodyStart="Hi Immensetec, I am interested in knowing more about  ";
+        emailBodyEnd=" Please reach out to me at ==your phone number please==";
+        //put the type of hiring here. " hiring with immensetec " if no hiring type is selected
+        hiring=" hiring ";
+        //keep blank if no vertical is provided
+        verticals="";
+        hire_element = document.getElementById("hire");
+        hire_val=hire_element.value;
+        switch(hire_val){
+        case "general":
+            hiring = " hring ";
+            break;
+        case "direct":
+            hiring = " direct hiring ";
+            break;
+        case "contract":
+            hiring = " contract hiring ";
+            break;
+        default :
+            hiring = " hiring ";
+        }
+        vertical_element = document.getElementById("bus_vertical");
+        vertical_val=vertical_element.value;
+        switch(vertical_val){
+        case "any":
+            verticals = "";
+                break;
+        case "energy":
+            verticals = " for Energy and Utilities ";
+                break;
+        case "consult":
+            verticals =" for Consulting and Professional Services ";
+                break;
+        case "edu":
+            verticals = " for Education ";
+            break;
+        case "ngo":
+            verticals = " for Non-profit and NGOs ";
+            break;
+        case "auto":
+            verticals = " for Automtive ";
+                break;
+        case "eng":
+            verticals = " for Engineering ";
+                break;
+        case "retail":
+            verticals = " for Retail and E-commerce ";
+                break;
+        case "logi":
+            verticals = " for Manufacturing and Logistics ";
+                break;
+        case "tour":
+            verticals = " for Hospitality and tourism ";
+                break;
+        case "media":
+            verticals = " for Media and Entertainment ";
+                break;
+        case "tech":
+            verticals = " for Technology ";
+                break;
+        case "health":
+            verticals = " for Healthcare ";
+                break;
+        case "fin":
+            verticals = " for Finance and Accounting ";
+                break;
+        case "ads":
+            verticals = " for Marketing and advertising ";
+                break;
+        case "prop":
+            verticals = " for Real Estate and Property Management ";
+                break;
+        default:
+            verticals = " ";
+                break;
+        }
+        emailBodyStart=emailBodyStart+hiring+verticals+"."+emailBodyEnd;
+        subject="Hiring with Immensetec";
+        encoded_body=encodeURIComponent(emailBodyStart);
+        encoded_subject=encodeURIComponent(subject);
+        window.location.href = "mailto:awhite@immensetec.com?subject="+encoded_subject+"&body="+encoded_body;
+        }
+    </script>
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -72,7 +163,7 @@
             </div>
         </div>
         <div class="row mt-4" >
-            <div class="col-md-6 mx-auto" style="font-size: 1.3rem; font-weight: 400; line-height: 1.6; margin-top:16%; padding-right:1%; border-radius: 2%;">
+            <div class="col-md-6 mx-auto" style="font-size: 1.3rem; font-weight: 400; line-height: 1.6; margin-top:16%; padding-right:1%; border-radius: 2%; margin-top:8%;">
                 <div class="contact-info">
                     <h4 class="text-dark">Contact Information</h4>
                     <p>Email: <a href="mailto:awhite@immensetec.com">awhite@immensetec.com</a></p>
@@ -84,7 +175,7 @@
                 <div class="p-5 bg-light shadow rounded" style="margin-top:6%; font-size: 1.2rem; font-weight: 400; line-height: 1.6; ">
                     <h4 class="text-dark" style="text-align: center; margin-bottom: 4%">Send Us a Message</h4>
                     <form>
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <label for="name" class="form-label">Your Name</label>
                             <input type="text" class="form-control" id="name" required>
                         </div>
@@ -95,26 +186,37 @@
                         <div class="mb-3">
                             <label for="message" class="form-label">Your Message</label>
                             <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
+                        </div> -->
                         <div class="mb-3">
-                            <label for="hire" class="form-label">Hire Type</label>
-                            <select class="form-select" id="hire">
-                                <option value="general">General</option>
+                            <label for="name" class="form-label">Hire Type</label>
+                            <select class="form-select" id="hire" name="hire_type">
+                                <option value="general" selected>General</option>
                                 <option value="direct">Direct Hire</option>
                                 <option value="contract">Contract Hire</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="bus_vertical" class="form-label">Business Vertical</label>
-                            <select class="form-select" id="bus_vertical">
-                                <option value="any">Any</option>
+                            <label for="Email" class="form-label">Business Vertical</label>
+                            <select class="form-select" name="business_vertical" id="bus_vertical">
+                                <option value="any" selected>Any</option>
+                                <option value="energy">Energy and Utilities</option>
+                                <option value="consult">Consulting and Professional Services</option>
+                                <option value="edu">Education</option>
+                                <option value="ngo">Non-profit and NGOs</option>
+                                <option value="auto">Automotive</option>
+                                <option value="eng">Engineering</option>
+                                <option value="retail">Retail and E-commerce</option>
+                                <option value="logi">Manufacturing and Logistics</option>
+                                <option value="tour">Hospitality and Tourism</option>
+                                <option value="media">Media and Entertainment</option>
                                 <option value="tech">Technology</option>
                                 <option value="health">Healthcare</option>
-                                <option value="finance">Finance and Accounting</option>
-                                <option value="edu">Education</option>
+                                <option value="fin">Finance and Accounting</option>
+                                <option value="ads">Marketing and Advertising</option>
+                                <option value="prop">Real Estate and Property Management</option>
                             </select>
                         </div>
-                        <button type="button" class="btn btn-primary w-100" style="background-color: #b8318b; padding:1.5%; border-radius: 50px">Send Email</button>
+                        <button type="button"  id="email_btn" onclick="emailFun()" class="btn btn-primary w-100" style="background-color: #b8318b; padding:1.5%; border-radius: 50px">Send Email</button>
                     </form>
                 </div>
             </div>
