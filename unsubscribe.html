@@ -157,6 +157,17 @@
     const app = firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
 
+
+    // Check if Firestore connection is successful
+    db.collection('test').get().then((querySnapshot) => {
+        if (!querySnapshot.empty) {
+        console.log('Firestore connection is successful! Data exists in the collection.');
+        } else {
+        console.log('Firestore connection is successful, but no data found in the collection.');
+        }
+    }).catch((error) => {
+        console.error('Error connecting to Firestore:', error);
+    });
     </script>
     <script src="js/UnsubSave.js"></script>
     <script src="js/aos.js"></script>
