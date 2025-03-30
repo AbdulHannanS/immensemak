@@ -89,7 +89,7 @@
             <div class="col-md-6" style="border-radius: 2%;">
                 <div class="p-5 bg-light shadow rounded" style="margin-top:6%; font-size: 1.2rem; font-weight: 400; line-height: 1.6; ">
                     <h4 class="text-dark" style="text-align: center; margin-bottom: 4%">Unsubscribe</h4>
-                    <form>
+                    <form id="unsubForm">
                         <div class="mb-3">
                             <label for="comp_name" class="form-label">Company Name</label>
                             <input type="text" class="form-control" id="comp_name">
@@ -142,7 +142,28 @@
     </div>
 
 
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
+    <script>
+
+    import { initializeApp } from "firebase/app";
+    import { getFirestore, doc, setDoc, Timestamp } from "firebase/firestore";
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAg_VLiFwt2CrZHGrNXvHcrj5s8nYzbhcQ",
+        authDomain: "immensetecmak.firebaseapp.com",
+        projectId: "immensetecmak",
+        storageBucket: "immensetecmak.appspot.com",
+        messagingSenderId: "58803461436"
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    </script>
+    <script src="js/UnsubSave.js"></script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init();
