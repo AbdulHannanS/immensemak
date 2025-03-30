@@ -1,6 +1,3 @@
-// Initialize Firestore (make sure Firebase is set up)
-const db = firebase.firestore();
-
 const unsubscribeForm = document.getElementById("unsubForm");
 
 unsubscribeForm.addEventListener("submit", async (e) => {
