@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
     else {
-        if(store_dnc($email)) {
+        if(store_dnc(trim($email))) {
             header('Location: unsubscribe_success.html');
         }
         else {
@@ -29,9 +29,11 @@ function store_dnc($email) {
         exit();
     }
 
-    $sql = "INSERT INTO `unsub_list`(`unsub_email`) VALUES ('" . $email . "')";
+    $sql = "INSERT INTO `unsub_list`(`unsub_email`) VALUES ('" . $email . "');";
 
     if (mysqli_query($conn, $sql)) {
+        $empemail_sql = "UPDATE `empemail` SET `EmpEmailStatus`='DNC' WHERE `EmpEmail` = '" . $email . "';";
+        mysqli_query($conn, $empemail_sql);
         return true;
       } else {
         return false;
