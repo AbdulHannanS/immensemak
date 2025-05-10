@@ -6,33 +6,36 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
     else {
-        store_dnc($email);
+        if(store_dnc($email)) {
+            header('Location: index.html');
+        }
+        else {
+            echo " Could not unsubscribe ";
+        }
     }
-    
-    header("url=index.html");
 }
 
 function store_dnc($email) {
     $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "immehubw_root";
+    $password = "HannanTabrez@123#";
+    $dbname = "immehubw_profiling";
 
-    $conn = new mysqli($servername, $username, $password);
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-    if($conn->connect_error) {
-        die("connection failed: " . $conn->connect_error);
+    if(!$conn) {
+        die("connection failed: " . mysqli_connect_error());
+
+        exit();
     }
-    else {
 
-        $stmt = $conn->prepare("INSERT INTO `unsub_list`(`unsub_email`) VALUES (?)");
-        $stmt->bind_param("s", $email); 
+    $sql = "INSERT INTO `unsub_list`(`unsub_email`) VALUES ('" . $email . "')";
 
-        $stmt->execute();
-
-        $stmt->close();
-        $conn->close();
-}
-
+    if (mysqli_query($conn, $sql)) {
+        return true;
+      } else {
+        return false;
+      }
 }
 
 ?>
