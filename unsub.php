@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else {
         if(store_dnc($email)) {
-            header('Location: index.html');
+            header('Location: unsubscribe_success.html');
         }
         else {
             echo " Could not unsubscribe ";
@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 function store_dnc($email) {
     $servername = "localhost";
     $username = "immehubw_root";
-    $password = "HannanTabrez@123#";
+    $password = "YfkO)rlpna+*";
     $dbname = "immehubw_profiling";
 
     $conn = mysqli_connect($servername, $username, $password, $dbname);
