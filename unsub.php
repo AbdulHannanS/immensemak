@@ -8,18 +8,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     else {
         store_dnc($email);
     }
+    
+    header("url=index.html");
 }
 
 function store_dnc($email) {
     $servername = "localhost";
-    $username = "user";
-    $password = "pass";
+    $username = "root";
+    $password = "";
 
     $conn = new mysqli($servername, $username, $password);
 
-    if(mysqli_connect_error()) {
-        die("connection failed: " . mysqli_connect_error());
+    if($conn->connect_error) {
+        die("connection failed: " . $conn->connect_error);
     }
+    else {
+
+        $stmt = $conn->prepare("INSERT INTO `unsub_list`(`unsub_email`) VALUES (?)");
+        $stmt->bind_param("s", $email); 
+
+        $stmt->execute();
+
+        $stmt->close();
+        $conn->close();
+}
 
 }
 
